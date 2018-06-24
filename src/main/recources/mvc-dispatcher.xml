@@ -15,6 +15,9 @@
     <context:component-scan base-package="com.haha.controller"/>
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven/>
+    <mvc:resources
+            mapping="/webjars/**"
+            location="classpath:/META-INF/resources/webjars/" />
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
